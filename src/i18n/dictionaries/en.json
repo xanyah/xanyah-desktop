@@ -222,7 +222,7 @@
   },
   "providers": {
     "createButtonLabel": "Create a supplier",
-    "pageTitle": "Manufacturers",
+    "pageTitle": "Providers",
     "searchPlaceholder": "Search for a supplier ...",
     "table": {
       "name": "Supplier name"

@@ -23,12 +23,16 @@ export const useCurrentStore = () => {
 
 export const useCurrentStoreRole = () => {
   const currentStore = useCurrentStore()
+<<<<<<< HEAD
   const {data: currentUserData} = useCurrentUser()
   const {data} = useStoreMemberships({
     'q[userIdEq]': currentUserData?.data.id
   })
 
   console.log(currentStore, data?.data)
+=======
+  const {data} = useStoreMemberships()
+>>>>>>> 56fe179 (Adding printing)
 
   return find(data?.data, {storeId: currentStore?.id})?.role
 }
